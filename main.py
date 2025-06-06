@@ -13,7 +13,7 @@ from config import Config
 # Logging setup
 logging.basicConfig(
     format=Config.LOG_FORMAT,
-    level=getattr(logging, Config.LOG_LEVEL)
+    level=getattr(logging, Config.LOG_LEVEL))
 logger = logging.getLogger(__name__)
 
 class SessionManager:
